@@ -1,67 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Job Application Form</title>
+ <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <h1>Job Application Form</h1>
-  <form action="/submit" method="POST">
-    <!-- Name -->
-    <label for="name">Name</label>
-    <input type="text" id="name" name="name" required>
-    <br><br>
+ <form action="job_form" method="post"> 
+ <h1>Job Application Form</h1>
 
-    <!-- Email -->
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" required>
-    <br><br>
+  <div> 
+  <label for="name">Name</label>
+ <input type="text" id="name" name="name" required>
+  </div>
+ <br>
 
-    <!-- Gender -->
-   <!-- Gender -->
-<fieldset>
-  <legend>Gender</legend>
-  <input type="radio" id="gender_male" name="gender" value="male" required>
-  <label for="gender_male">Male</label>
 
-  <input type="radio" id="gender_female" name="gender" value="female" required>
-  <label for="gender_female">Female</label>
-</fieldset>
+  <div> 
+  <label for="email">Email</label>
+ <input type="email" id="email" name="email" required>
+  </div>
+ <br>
+	
+	
+ <div> 
+  <label>Gender</label>
+  
+ <input type="radio" id="gender" name="gender" value="male" required>
+  <label for="gender">Male</label>
+ 
+ <input type="radio" id="gender" name="gender" value="female" required>
+  <label for="gender">Female</label>
+  </div>
+ <br>
 
-    <br><br>
 
-    <!-- Laptop Brands -->
-    <label for="laptop">Laptop Brands</label>
-    <select id="laptop" name="laptop">
-      <option value="apple">Apple</option>
-      <option value="asus">Asus</option>
-      <option value="hp">HP</option>
-    </select>
-    <br><br>
+  <div> 
+   <label for=laptop>Laptop Brands</label>
+  <select id="laptop" name="laptop">
+ <option value="">--Please choose an option--</option>
+                <option value="Apple">Apple</option>
+                <option value="Asus">Asus</option>
+                <option value="HP">HP</option>
+  </select>
+  </div>
+ <br>
 
-    <!-- Age -->
-    <label for="age">Age</label>
-    <input type="number" id="age" name="age" required>
-    <br><br>
 
-    <!-- Date of Birth -->
-    <label for="dob">Date of Birth</label>
-    <input type="date" id="dob" name="dob" required>
-    <br><br>
+  
+  <div> 
+  <label for="age">Age</label>
+ <input type="number" id="age" name="age" required>
+  </div>
+ <br>
 
-    <!-- Password -->
-    <label for="password">Password</label>
-    <input type="password" id="password" name="password" required>
-    <br><br>
 
-    <!-- Portfolio URL -->
-    <label for="portfolio">Portfolio URL</label>
-    <input type="url" id="portfolio" name="portfolio">
-    <br><br>
+<div> 
+  <label for="dob">Date of Birth</label>
+ <input type="date" id="dob" name="dob" required>
+  </div>
+ <br>
+  
 
-    <!-- Submit Button -->
-    <button type="submit">Submit</button>
-  </form>
+  
+
+  <div> 
+  <label for="password">Password</label>
+ <input type="password" id="password" name="password" required>
+  </div>
+ <br>
+
+
+
+  <div> 
+  <label for="portfolio">Portfolio URL</label>
+ <input type="url" id="portfolio" name="portfolio">
+  </div>
+ <br>
+
+
+<div>
+ <button type="submit">Submit</button>
+</div>
+	
+	
+	
+	
+ </form>
+ <!-- the entire body must be written by student -->
+    <script type="text/javascript" src="./script.js">
+</script>
+
 </body>
+
 </html>
